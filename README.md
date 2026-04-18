@@ -1,3 +1,4 @@
+# API URL: https://<codespace-name>-8000.app.github.dev/api/
 
 
 # Build Applications with GitHub Copilot Agent Mode
