@@ -24,12 +24,4 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
     queryset = Leaderboard.objects.all()
     serializer_class = LeaderboardSerializer
 
-@api_view(['GET'])
-def api_root(request, format=None):
-    return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activities': '/activities/',
-        'workouts': '/workouts/',
-        'leaderboard': '/leaderboard/',
-    })
+
