@@ -1,3 +1,6 @@
+# API Endpoint
+
+The application runs on: https://<your-codespace-name>-8000.app.github.dev
 # API URL: https://<codespace-name>-8000.app.github.dev/api/
 
 
