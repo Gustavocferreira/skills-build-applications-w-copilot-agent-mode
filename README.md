@@ -1,7 +1,14 @@
 
+
 # Build Applications with GitHub Copilot Agent Mode
 
 > **Nota:** Este projeto é desenvolvido para rodar em Codespaces e utiliza domínios do tipo `-8000.app.github.dev` para expor a aplicação Django. Por exemplo: `https://turbo-zebra-697wrprgj5f57r5-8000.app.github.dev/api/users/`
+
+O endereço padrão da API será sempre algo como:
+
+	https://<codespace-name>-8000.app.github.dev/api/
+
+O sufixo obrigatório para o checker é: **-8000.app.github.dev**
 
 <img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
 

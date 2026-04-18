@@ -30,12 +30,20 @@ DEBUG = True
 CODESPACE_NAME = os.environ.get("CODESPACE_NAME")
 
 
-# ALLOWED_HOSTS configurado para aceitar localhost, 127.0.0.1 e qualquer subdomínio de .app.github.dev (ex: turbo-zebra-697wrprgj5f57r5-8000.app.github.dev)
+
+# ALLOWED_HOSTS configurado para aceitar qualquer host ("*"), domínios .app.github.dev, localhost e 127.0.0.1
 ALLOWED_HOSTS = [
+    "*",
+    ".app.github.dev",
     "localhost",
     "127.0.0.1",
-    ".app.github.dev",
-    ".github.dev",
+]
+
+# Permitir CORS para qualquer subdomínio de .app.github.dev
+CORS_ALLOWED_ORIGINS = []
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https:\/\/[a-zA-Z0-9\-]+-8000\.app\.github\.dev$",
 ]
 
 INSTALLED_APPS = [
