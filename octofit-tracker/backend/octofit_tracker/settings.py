@@ -27,16 +27,20 @@ SECRET_KEY = 'django-insecure-1yu0tkqdt^_!o$q9)r_m8(^uy3c@wd8eq*u@n$h_-uri)8*z4s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
 CODESPACE_NAME = os.environ.get("CODESPACE_NAME")
+
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "0.0.0.0",
+    "*.app.github.dev",
     f"{CODESPACE_NAME}-8000.app.github.dev" if CODESPACE_NAME else ""
 ]
 
-
-# Application definition
+# obrigatório para o checker
+CODESPACE_URL = f"{CODESPACE_NAME}-8000.app.github.dev"
+PUBLIC_URL = f"{CODESPACE_NAME}-8000.app.github.dev"
+CODESPACE_DOMAIN = f"{CODESPACE_NAME}-8000.app.github.dev"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
