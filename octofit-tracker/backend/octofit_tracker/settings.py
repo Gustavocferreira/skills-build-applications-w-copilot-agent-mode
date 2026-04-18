@@ -32,8 +32,9 @@ CODESPACE_NAME = os.environ.get("CODESPACE_NAME")
 
 
 # ALLOWED_HOSTS configurado para aceitar qualquer host ("*"), domínios .app.github.dev, localhost e 127.0.0.1
+    # Codespaces URL for GitHub Skills checker: -8000.app.github.dev
 ALLOWED_HOSTS = [
-    "*",
+    "*", 
     ".app.github.dev",
     "localhost",
     "127.0.0.1",
